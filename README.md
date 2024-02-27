@@ -2,7 +2,7 @@
 
 >CastleVille(Facebook) officially closed April 30th, 2016
 
-The Old Empires & Allies preservation project by the Raise the Empires team.
+The Old CastleVille preservation project.
 This project is dedicated to preserving this Flash game so that it's not lost to time.
 
 [![version](https://img.shields.io/badge/version-0.08a--preview1-blue)](#)
@@ -33,7 +33,7 @@ This project is dedicated to preserving this Flash game so that it's not lost to
 
 :classical_building: [CastleVille Revision History](https://github.com/....#readme)
 
-:world_map: [CastleVille Empire Map Editor](https://github.com/....#readme)
+:world_map: [CastleVille World Map Editor](https://github.com/....#readme)
 
 ## External Links
 :beginner: [CastleVille Wiki (FANDOM)](https://castlevillezynga.fandom.com/wiki/Castleville_Wiki)
@@ -47,7 +47,8 @@ This project is dedicated to preserving this Flash game so that it's not lost to
 - [EFGAMP](https://efgamp.eu/), the European Federation of Video Game Archives, Museums and Preservation projects.
 - [UNESCO PERSIST Programme](https://unescopersist.org/), helps ensure that digital information can continue to be accessed in the future.
 - [The Internet Archive](https://archive.org/), a digital library of Internet sites and other cultural artifacts in digital form.
-- [Raise the Empires - Empires & Allies preservation](https://github.com/AcidCaos/raisetheempires)
+- [Raise the Empires](https://github.com/AcidCaos/raisetheempires) Empires & Allies preservation
+- [DigitalChocolate](https://launcher.digitalchocolate.online/)
 - [BlueMaxima's Flashpoint](https://bluemaxima.org/flashpoint/), the webgame preservation project.
 - [Adobe Flash Player Archive](https://archive.org/download/flashplayerarchive/), the Adobe Inc. archive.org Flash Player Archive.
 
@@ -55,8 +56,8 @@ This project is dedicated to preserving this Flash game so that it's not lost to
 
 ## License [![GPL v3](https://img.shields.io/badge/GPL%20v3-blue)](http://www.gnu.org/licenses/gpl-3.0)
 ```
-Old Empires and Allies preservation project.
-Copyright (C) 2019  The Raise the Empires team
+Old CastleVille preservation project.
+Copyright (C) 2024  The Raid the Castles team
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
