@@ -5,7 +5,7 @@
 The Old CastleVille preservation project.
 This project is dedicated to preserving this Flash game so that it's not lost to time.
 
-[![version](https://img.shields.io/badge/version-0.08a--preview1-blue)](#)
+[![version](https://img.shields.io/badge/version-0.01a--preview1-blue)](#)
 [![size](https://img.shields.io/badge/size-730%20MB-brightgreen)](#)
 [![downloads](https://img.shields.io/github/downloads/Natlies/raidthecastles/total?label=downloads%40all)](../../releases/latest)
 
@@ -74,7 +74,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 ### Related
 ```
-Chromium 82.0, Copyright 2020-2021 The Chromium Authors. All rights reserved.
+Chromium 82.0, Copyright 2020-2024 The Chromium Authors. All rights reserved.
 Chromium is made possible by the Chromium open source project and other open source software.
 ```
 
