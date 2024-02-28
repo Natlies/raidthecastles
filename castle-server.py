@@ -36,8 +36,7 @@ def index():
 def home():
     print("home")
 
-    return render_template("home2.html"
-                           )
+    return render_template("home2.html")
 
 
 @app.route("/Game.74708.swf")
