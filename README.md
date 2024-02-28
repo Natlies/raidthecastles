@@ -1,4 +1,4 @@
-![CastleVille](templates/img/logo.png "Empires & Allies logo")
+![CastleVille](templates/img/Logo.png "CastleVille logo")
 
 >CastleVille(Facebook) officially closed April 30th, 2016
 
