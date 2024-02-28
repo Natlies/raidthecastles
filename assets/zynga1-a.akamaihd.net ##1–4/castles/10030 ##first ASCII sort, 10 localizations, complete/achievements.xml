@@ -1,0 +1,30 @@
+<achievements>
+	<achievement name="buydecorations" code="A001" visible="true" rewardable="true">
+		<tasks>
+			<task total="5">
+				<rewards xp="10" coins="100" />
+			</task>
+			<task total="50">
+				<rewards xp="20" coins="200" />
+			</task>
+			<task total="100">
+				<rewards xp="30" coins="300" />
+			</task>
+			<task total="500">
+				<rewards xp="40" coins="400" />
+			</task>
+		</tasks>
+		<image name="icon" url="assets/achievements/Decorations_icon.png"/>
+	</achievement>
+	<achievement name="visitneighbors" code="A002" visible="true" rewardable="true">
+		<tasks>
+			<task level="1" total="5">
+				<rewards xp="200" coins="1000" />
+			</task>
+			<task level="2" total="10">
+				<rewards xp="2000" coins="10000" />
+			</task>
+		</tasks>
+		<image name="icon" url="assets/achievements/Neighbors_icon.png"/>
+	</achievement>
+</achievements>

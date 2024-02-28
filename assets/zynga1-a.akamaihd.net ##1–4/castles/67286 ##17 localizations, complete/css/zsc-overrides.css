@@ -1,0 +1,53 @@
+/* General styles */
+
+/* Replace zero state message */
+div.zsc_inbox div.inbox_zerostate_message {
+	background: url('../images/zsc/zGirl-bubbleCV.png') no-repeat center !important;
+	height: 75px !important;
+	margin: 15px 25px !important;
+	padding: 25px 20px 25px 110px !important;
+	width: 420px !important;
+}
+
+/* Replace teaser message */
+div.zsc_inbox div.inbox_zynga_neighbors_teaser {
+	background: url('../images/zsc/img_zyngagirl_bgCV.jpg') no-repeat !important;	
+}
+
+/* Replace speech message */
+div.zsc_inbox div.inbox_new_feature_notif {
+	background: url('../images/zsc/zGirl-bubbleCV.png') no-repeat center !important;
+	height: 88px !important;
+	padding: 35px 22px 25px 122px !important;
+	width: 436px !important;
+}
+
+div.zsc_inbox div.inbox_new_feature_close {
+	top: 85px !important;
+	right: 47px !important;
+}
+
+/* Replace speech message */
+div.zsc_inbox div.zui_inbox_announcement_center {
+	height: 140px !important;
+}
+
+div.zsc_inbox div.zui_inbox_announcement_center > ul > li > img {
+	display: none !important;
+}
+
+div.zsc_tooltip div.zsc_tooltip_i li:first-child {
+	display: none !important;
+}
+
+/*
+    CST-22717: This causes the "Zynga wants to better connect you..." button to be pushed to the right and truncated
+    as a result, so removing for now
+*/
+/*
+div.zsc_inbox div.zui_inbox_announcement_center > ul > li.zui_inbox_announcement_announcement {
+	background: url('../images/zsc/img_zyngagirl_bgCV.jpg') no-repeat !important;
+	padding-left: 75px !important;
+	height: 140px !important;
+}
+*/

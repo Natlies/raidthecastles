@@ -1,0 +1,22 @@
+<wildernessRegrowth>
+	<regrowthRules>
+		<regrowthRule name="treeRegrowthRule" chance="0.05" period="1440" radius="3" />
+		<regrowthRule name="rockRegrowthRule" chance="0.03" period="1440" radius="3" />
+		<regrowthRule name="brambleRegrowthRule" chance="0.01" period="1440" radius="3" />
+	</regrowthRules>
+	<regrowthItems>
+		<regrowthItem itemName="tree_pine_01" rule="treeRegrowthRule" />
+		<regrowthItem itemName="tree_pine_02" rule="treeRegrowthRule" />
+		<regrowthItem itemName="Bush_01" rule="brambleRegrowthRule" />
+		<regrowthItem itemName="Bush_02" rule="brambleRegrowthRule" />
+		<regrowthItem itemName="Bush_03" rule="brambleRegrowthRule" />
+		<regrowthItem itemName="Bramble_01" rule="brambleRegrowthRule" />
+		<regrowthItem itemName="RockPieces_01" rule="rockRegrowthRule" />
+		<regrowthItem itemName="Rock_01" rule="rockRegrowthRule" />
+		<regrowthItem itemName="Rock_02" rule="rockRegrowthRule" />		
+	</regrowthItems>
+	<newGrowthRules>
+		<newGrowthRule name="treeNewGrowthRule" />
+	</newGrowthRules>
+	
+</wildernessRegrowth>

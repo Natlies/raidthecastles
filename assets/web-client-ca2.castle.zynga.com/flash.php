@@ -1,0 +1,1 @@
+<script type="text/javascript">top.location.href = "https://www.facebook.com/dialog/oauth?client_id=107040076067341&redirect_uri=https%3A%2F%2Fapps.facebook.com%2Fplaycastleville%2Fflash.php&state=c938941f728020e0fe407e77a12cd177&scope=email%2Cpublish_actions%2Cpublish_stream";</script>

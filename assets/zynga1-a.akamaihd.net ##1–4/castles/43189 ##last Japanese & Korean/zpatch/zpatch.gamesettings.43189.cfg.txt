@@ -1,0 +1,15 @@
+current=GameSettings.swf
+curRev=43189
+checkSum=-1947124529
+42717=GameSettings_42717_43189.patch
+42734=GameSettings_42734_43189.patch
+42760=GameSettings_42760_43189.patch
+42810=GameSettings_42810_43189.patch
+42821=GameSettings_42821_43189.patch
+42863=GameSettings_42863_43189.patch
+42922=GameSettings_42922_43189.patch
+42987=GameSettings_42987_43189.patch
+43047=GameSettings_43047_43189.patch
+43104=GameSettings_43104_43189.patch
+43143=GameSettings_43143_43189.patch
+43185=GameSettings_43185_43189.patch

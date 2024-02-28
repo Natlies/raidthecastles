@@ -1,0 +1,261 @@
+/**
+ * File Name: main.css
+ *
+ * This file holds all of the global styles for the site
+ * © 2010 Zynga Game Network Inc.
+ */
+html { font: 10pt Verdana; }
+h1 { font-size: 11pt; font-weight: bold; }
+h2 { font-weight: bold; }
+
+.fv_main_body_cont {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+.noticebox {border: 1px solid #FFD100; background-color: #FFF4BF; padding: 8px;text-align: center; margin: 0 0 10px 0}
+.subheader {font-size: 13px; border-bottom: 1px solid #808080; padding: 4px 0 2px 0; margin: 0 0 6px 0;}
+.section {margin: 0 0 10px 0;}
+
+.padding_content { padding: 8px; }
+
+/** Float Styles */
+.left { display: block; float: left; } 
+.center { text-align: center; }
+.right { display: block; float: right; }
+.clear { clear: both; }
+
+/** Help page */
+.help div, .help h2 { padding: 4px 0px; }
+.help h1 { padding-bottom: 4px; }
+.help ul { list-style-type: disc; margin: 5px 20px; padding: 0px 10px; }
+
+
+/** Gifts page */
+.gift_img {
+	padding: 17px 11px 0px 0px;
+	text-align: center;
+}
+
+.gift_name {
+	margin: 5px 17px 0px 5px;
+	color: #70461e;
+	font-weight: bold;
+}
+
+.giftLocked .gift_name {color: #666;}
+.gift_quantity {color: #606060; margin: 0px 17px 8px 5px; font-weight: bold;}
+
+.gift_action {
+	margin: 3px 17px 0px 5px;
+	color: red;
+	font-weight: bold;
+}
+
+.giftIconImg {
+	width: 75px;
+	height: 75px;
+}
+
+.giftformsubmit {
+	background-color:#3B5998;
+	border-color:#D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+	border-style:solid;
+	border-width:1px;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	margin:1px 5px;
+	padding:3px 10px;
+	text-decoration:none;
+}
+
+.giftsendbtn {
+	background-color:#3B5998;
+	border-color:#D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+	border-style:solid;
+	border-width:1px;
+	color:white;
+	font-size:10px;
+	margin:1px 5px;
+	padding:3px 10px;
+	text-decoration:none;
+}
+
+.main_gift_cont ul {list-style-type: none;}
+.main_gift_cont li { float: left; text-align: center; background: #FFFFFF top left no-repeat; }
+.giftLi, .giftLocked { width: 143px; height: 166px; }
+.giftLiWide, .giftLockedWide { width: 175px; height: 166px;}
+
+.fan_box .connect_top {
+	padding: 0px 0px 0px 0px;
+}
+
+.fan_box .profileimage {
+	display:none;
+}
+
+.fan_box .connect_button {
+	text-align: center;
+	padding: 0px;
+}
+
+.UIButton {
+	padding: 3px 3px;
+}
+
+.UIActionButton {
+    margin: 0px;
+}
+#fanBox{
+	width:400px;
+	position:absolute;
+	z-index: 20;
+	left: 180px;
+	top: 800px;
+}
+#fanBox .bubble_titlebar{
+	top: -5px;
+	left: 5px;
+	z-index: 20;
+	position:relative;
+	background-color: #6D84B4;
+	color: white;
+	font-weight: bold;
+	font-family: verdana, helvetica;
+	border: 1px solid #3B5998;
+	font-size: 10px;
+	padding: 2px;
+	padding-left: 5px;
+	text-align: right;
+	height: 25px;
+}
+#fanBox .bubble_top{
+	float: left;
+	vertical-align: middle;
+	line-height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+#fanBox .bubble_middle{
+	top: -5px;
+	left: 5px;
+	z-index: 20;
+	background-color: white;
+	position:relative;
+	text-align: center;
+	color: black;
+	font-family: verdana, helvetica;
+	border-right: 1px solid #777;
+	border-left: 1px solid #777;
+	border-bottom: 1px solid #777;
+	font-size: 10px;
+}
+.fanBoxPopupText {
+	font-size:11px;
+	font-weight:bold;
+	font-family: verdana, helvetica;
+}
+
+#socialBar {
+	width: 760px;
+	height: 106px;
+	position: relative;
+}
+
+#socialBar #progressBar {
+	width: 635px;
+	height: 28px;
+	position: absolute;
+	top: 35px;
+	left: 14px;
+}
+
+#socialBar #progressPercentage {
+	position: absolute;
+	right: 0px;
+	top: 3px;
+	height: 21px;
+	width: 42px;
+}
+#socialBar .pBarStep {
+	position: absolute;
+	top: 10px;
+	width: 146px;
+	height: 87px;
+	text-align: center;
+}
+
+#pBarStepInstall {
+	left: 12px;
+}
+
+#pBarStepBookmark {
+	left: 159px;
+}
+
+#pBarStepFan {
+	left: 306px;
+}
+
+#pBarStepSubscribe {
+	left: 453px;
+}
+
+#socialBar #pBarStepSubscribe .pBarAction {
+	left: 20px;
+}
+
+#pBarStepPublish {
+	left: 600px;
+}
+
+#socialBar .pBarLabel {
+	width: 146px;
+	font-size: 10px;
+	line-height: 17px;
+}
+
+#socialBar .pBarLabel img {
+	vertical-align: top;
+	margin-right: 3px;
+}
+
+#socialBar .pBarAction {
+	position: absolute;
+	bottom: 0;
+	left: 13px;
+}
+
+#socialBar .done .pBarAction {
+	display: none;
+}
+
+#socialBar .pBarDone {
+	display: none;
+}
+
+#socialBar .done .pBarDone {
+	display: block;
+	width: 116px;
+	height: 15px;
+	position: absolute;
+	left: 13px;
+	bottom: 8px;
+}
+#socialBarCallout {
+	color: #9D6828;
+	text-align: center;
+	font-size: 20px;
+	margin: 13px 0;
+}
+a.viral_dialog_button_close {
+	width: 9px;
+	height: 10px;
+	padding: 0px;
+	margin: 0px;
+	top: 10px;
+	right: 4px;
+	position: absolute;
+}

@@ -1,0 +1,27 @@
+﻿<!-- Null controls don't copy and copy only works under context menu; I transcribed the ASCII codes as space-bounded (inline) hexadecimal, put quotes on literal numerics, and replaced zyCred and clientZid with spaces. -->
+
+Referer: https://zynga1-a.akamaihd.net/castleville//hashed/cffbc81e54cd25f0692d847b6cc1da4e.swf
+Content-type: application/x-amf
+Content-length: 408
+
+0 3 0 0 0 1 0 19 BaseService.dispatchBatch 0 2/"1" 0 0 1 o
+0 0 0 3 11
+8 1 13clientZid 6 17 "           " 15 zyAuthHash 6 Ada8e74191a3b2fa04807dac4e03c473b%timeSinceLastBatch 4 0
+zyCred 6                                                           1B flashRevision 4 84 ÇT
+zySnid 6 7 "104" 1F clientSessionID 6 1B "1429865469578" 6 zySig 6 A9008726a3205074685a925e64d372863 7 fps 6 "	31.6" 1 11 	 3 1 1 19 functionName 6 )UserService.initUser
+params	B 1 6 1 1 1 1 6 1B WIN 18,0,0,95 11 sequence 4 1 1 0 0 0 0 0 0 0 0 0
+
+Referer: https://zynga1-a.akamaihd.net/castleville//hashed/cffbc81e54cd25f0692d847b6cc1da4e.swf/[[DYNAMIC]]/1
+Content-type: application/x-amf
+Content-length: 525
+
+0 3 0 0 0 1 0 19 BaseService.dispatchBatch 0 2/"8" 0 0 1 ä
+0 0 0 3 11
+8 1 13clientZid 6 17 "           " 15 zyAuthHash 6 Ada8e74191a3b2fa04807dac4e03c473b%timeSinceLastBatch 4 83 ìy
+zyCred 6                                                           1B flashRevision 4 84 ÇT
+zySnid 4 h 1F clientSessionID 6 1B "1429865469578" B zySig 6 A0154822e2cc90929fec00212f54e29dc 7 fps 6 "	31.6" 1 11 	 3 1 1
+1 !OOSDetectionData
+1 1 B stamp 5 BtÎ¬g 16 p 0 17 transaction
+# 1 17 updateQuest 15 canPerform 2 3
+params	3 1 6 	Duke 11 sequence 4 11 11 baseline
+1 1F UpdateGameState 2 1 19 functionName 6 EWorldService.loadFakeNeighborWorld 19 UpdateQuests 2 1 0 0 0 0 0 0 0 0 0

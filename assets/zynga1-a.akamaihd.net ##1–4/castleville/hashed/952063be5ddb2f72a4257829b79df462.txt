@@ -1,0 +1,18 @@
+
+Asset name: EpicPartnerMagusBanners02
+
+Animation Flag01
+
+Animation Frame Rate: 14
+Aniamaton Frames :13
+Animation Width and hight: 58x160
+Aniamtion Offset: 39, 11
+
+
+Animation Flag02
+
+Animation Frame Rate: 14
+Aniamaton Frames :13
+Animation Width and hight: 54x39
+Aniamtion Offset: +41,-19
+

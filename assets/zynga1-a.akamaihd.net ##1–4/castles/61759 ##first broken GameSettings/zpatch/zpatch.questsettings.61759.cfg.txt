@@ -1,0 +1,4 @@
+current=QuestSettings.swf
+curRev=61759
+checkSum=-1393641227
+61738=QuestSettings_61738_61759.patch

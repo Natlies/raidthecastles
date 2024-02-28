@@ -1,0 +1,123 @@
+﻿How to save your user and world files
+
+Go into your browser's Network tab and sort by Method descending so that your POSTs float to the top.  Load the game.  You should see the gateway.php response over 1 MB.  Click on the Response tab and copy and paste the base64 string into a text file which you for now can name the command you see in the Request tab, initUser or initUser() with your zid as the argument, and .amf.b64.  This you can leave or decode with a web utility with the string still in your clipboard and write that to another .amf file.  initUser includes your world, progress, and activity but you may like the world file alone.  Click on your icon and wait for a response more than 900 kB.  Paste that into another file which you can name whatever, or loadWorld({zid}).amf.b64.  
+Then tell your active friends to do the same.  If they are all gone(!) you can visit them and copy their worlds.  My whole bar is arranged by folders with castle level and name with the file inside.  This does not copy their private information, or their progress or inventory, and the session tokens you leave expire after the request.
+
+If you use a standalone AMF reader you can import the file so you can see the tree; otherwise it looks mostly random.  If you use the reader at the same time as your browser, you must import its security certificate to your browser and except[sic] gateway.php's host for that session, but you can no longer browse the response until you delete the certificate.  Then you can see the trees during the session.
+
+With these data you can reconstruct your decorations should the art app ever materialize, or if someone salvages the game.  (Zynga will not do repeats other than in name; their new Empires and Allies is a new design altogether.)
+
+I will post another thread with my work on the game and the Facebook fan site, and make copies of this and the other post on Facebook and other fan sites I find on Google.  I'll also post to the petition.  This forum should be locked down and delisted on the day after the last (https://developers.facebook.com/docs/apps/changelog) when a mod wakes up.  Like Hidden Chronicles or Vampire Wars you can still read the forum by URL.
+
+All the best.
+
+I'll leave you with this hidden image I found in my source diving.  Annoying Fiona is annoying:
+[img]http://zynga1-a.akamaihd.net/zlive/zdc-e31cb61f_c76f89bd_2e5b1248-static/js/compiled/zui/modules/widgets/zdc/common/rail/takeover/avatarftueinterstitial/rightRailAvatarSmaller.gif[/img].
+
+
+
+As if I'd let Zynga delete $100,000 of work I care about
+
+if they do delete it rather than shelve it.  Here is where I'll post my month's work reading and gathering the game.  But first let me discuss whether this is licit by the community rules.  Broadly the rules are defined retrodictively and circularly: Use Zynga how Zynga approve and not how Zynga don't approve.  So I will wait until a director or lawyer objects to the dissemination of a dead, buggy, broke project.
+
+3.B. on collecting or harvesting of other user's[sic] content or information is expressly broken by social media, whether Zynga itself, fan sites, or any forum.  Zynga cannot enforce what other parties do on their consent.
+
+6.A,C,D.: All content came from eye- and hand-curation by browser, the main of which are public assets which require no account and the lave which require a session to my own account but whose sensitive information I took out.  The hashed assets make up about 37,000 files or 1.9 GB which took 2h15m to download off one of Zynga's servers.  By contrast, a game session may stream 15 MB and over the lifetime of the game 50 GB of mostly the same data, besides the advert and marketing leeches.  I think the players would like and respect it if these assets sat on their computer, like a decent firmware game, to cut down on lag and costs.  These files are [i]not[/i] private.
+
+6.F.: Every modern browser can see where they come from and let the player take and delve them.  Then I included select revisions as commented below, indices of those bucket lists, game associated files and paths, revisions of the Zynga bar, and my user and worlds and neighbor bar worlds, all in the hopes new developers or amateurs can learn and be helped from Zynga's mistakes.  Below are some of the folder indices:
+
+CastleVille camPfirE/
+./apps.facebook.com/
+./Campfire_01.swf
+./fb.cooking.zynga.com/
+./fbcdn-photos-e-a.akamaihd.net/
+./Until we meet again.txt
+./web-client-ca2.castle.zynga.com/
+./zcache.zgncdn.com/
+./zchan0-a.akamaihd.net ##0-3/
+./zy-ca2.castle.zynga.com/
+./zynga1-a.akamaihd.net ##1-4/
+./zyngagames.com/
+./CastleVille camPfirE.ico
+./desktop.ini
+./Icon.icns ##append carriage return to name
+
+zynga1-a.akamaihd.net ##1-4/
+./castles/
+./castleville/
+./cooking/
+./crossdomain.xml
+./zlive/
+
+castles/
+./10030 ##first ASCII sort, 10 localizations, complete/
+./10061 ##complete/
+./10790 ##complete/
+./17407 ##launch revision, 27 localizations/
+./17433 ##first update, complete/
+./18151 ##first Flash 10/
+./24485 ##last Malay/
+./31438 ##last foreign kit/
+./42922 ##first patch/
+./43189 ##last Japanese & Korean/
+./45665 ##last XML locales, FacebookIcons/
+./61656 ##last nonbroken GameSettings/
+./61759 ##first broken GameSettings/
+./67286 ##17 localizations, complete/
+./67677 ##last public %3fcastles%3f, marker/
+./8656 ##first public %3fcastles%3f, complete/
+./hashed ##see ..%3fcastleville%3fhashed%3f/
+./images ##see ..%3fcastleville%3fimages%3f/
+
+CastleVille came out with 23 languages, 4 redundant, 1 fake "Anglo-Saxon", but it seems 12 of the files were still offline.  These folders include every last language released.  The comment markup is mine. :)  As for the narrative design department, the Texan spelling really shows in the quest files.
+
+castleville/
+./65701 ##first %2fcastleville%2f, marker/
+./74708 ##last revision, complete/
+./hashed/
+./images/
+
+This gleaning comes out to 3.75 GB, about 200 MB of which were files with duplicate names and sizes which I made hard links.  Also our world files, in another host path, come to almost 200 MB.  Sadly it looks like Zynga deleted Amouria and Bedford Manor; the game would crash when I would load their names.  But somewhere on this forum I left a 88MB gif of Bedford Manor!  Also sadly I cannot do anything about the terabytes of players' files that are nonetheless mostly idle, a lot of which were corrupt and reset.  I think one can call a player's world who isn't a friend, by zid alone; it's been reported here a few times players got visitors or requesters they didn't know.  If there are any players of note I hope to see their work too, somewhere (doubtful).
+
+Tools: Waterfox, curl, EditPad Lite, DownThemAll!.  I took out tags between links with regex and loaded the file with the downloader, but only when there were thousands.  I awfully took the revision resources by hand, and it took weeks to see which to keep.  The top folder comes with a Windows and Mac format icon of the campfire you see in a new game, as a sprite however as I can't make animated file icons, and I couldn't find a way to enter a control code in a filename with Windows so the Mac icon needs that or a drag to the folder info icon.  A file is also hardlinked to the campfire hash Flash animation that opens in a browser.
+
+Next up is the other stuff Zynga are about to wipe.  Tools: Waterfox, Graph API Explorer, EditPad Lite, DownThemAll!, PhotoGrabber.  What I couldn't find XML for by Facebook's API, like the apps and notes, I copied the HTML of.  I couldn't find indices for Facebook's convoluted image paths so I used one of its API v1 utilities that should also break on the same date, PhotoGrabber.  Those also came to thousands of posts.  Extra time spent on the API tutorial and looking for export utilities.  Thanks to the self-destructive access of these messages, I can't or wouldn't record every FB post; it's better to let everyone some time to react.  A copy of this message shall go on the fan sites and petition.
+
+CastleVille scrapbook/
+./facebook.com/
+./gdcvault.com ##URLs/
+./Until we meet again.txt
+./zyngablog.typepad.com ##URLs/
+
+facebook.com/
+./castleville/
+./events/
+
+castleville/
+./albums
+./app_194937340530518
+./app_208195102528120
+./app_225578797538738
+./app_258779740866220
+./app_290187567669160
+./app_389562411070142
+./castleville.xml
+./events
+./feed
+./likes
+./milestones
+./notes
+./photos
+./picture
+./videos ##nothing
+
+These come to about 450 MB.
+
+Links to free hosts and share files go here when I get them online [watch this thread]:
+
+CastleVille camPfirE.zip:
+
+
+
+CastleVille scrapbook.zip:
+

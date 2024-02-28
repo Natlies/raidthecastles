@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM
+"http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+<allow-access-from domain="assets.empire.zynga.com"></allow-access-from>
+<allow-access-from domain="*.zgncdn.com"></allow-access-from>
+<allow-access-from domain="empire-zc-s3-assets.s3.amazonaws.com"></allow-access-from>
+<allow-access-from domain="zynga1-a.akamaihd.net"></allow-access-from>
+<allow-access-from domain="zynga2-a.akamaihd.net"></allow-access-from>
+<allow-access-from domain="zynga3-a.akamaihd.net"></allow-access-from>
+<allow-access-from domain="zynga4-a.akamaihd.net"></allow-access-from>
+<allow-access-from domain="*.zynga.com"></allow-access-from>
+<allow-access-from domain="*.yoville.com"></allow-access-from>
+<allow-access-from domain="*.mafiawars.com"></allow-access-from>
+<allow-access-from domain="*.farmville.com"></allow-access-from>
+<allow-access-from domain="*.fbsbx.com"></allow-access-from>
+<allow-access-from domain="*.castlemobile.zynga.com"></allow-access-from>
+<allow-access-from domain="*.zyngagames.com"></allow-access-from>
+</cross-domain-policy>

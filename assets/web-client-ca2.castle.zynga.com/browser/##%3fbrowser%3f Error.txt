@@ -1,0 +1,8 @@
+﻿(mx.rpc::Fault)#0
+  errorID = 0
+  faultCode = "AMFPHP_CLASSPATH_NOT_FOUND"
+  faultDetail = "/var/www/releases/74708/shared/ZEngineCore/lib/amfphp/shared/app/BasicActions.php on line 27"
+  faultString = "The classpath folder {/var/www/releases/74708/game/services/public/amfphp/DiscoveryService.php} does not exist. You probably misplaced your service."
+  message = "faultCode:AMFPHP_CLASSPATH_NOT_FOUND faultString:'The classpath folder {/var/www/releases/74708/game/services/public/amfphp/DiscoveryService.php} does not exist. You probably misplaced your service.' faultDetail:'/var/www/releases/74708/shared/ZEngineCore/lib/amfphp/shared/app/BasicActions.php on line 27'"
+  name = "Error"
+  rootCause = (null)
