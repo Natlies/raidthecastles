@@ -17,8 +17,6 @@ This project is dedicated to preserving this Flash game so that it's not lost to
 | ------- | ------ | ------------ | ------ | -------- |
 | pre-alpha 0.01a   | ... | TBD, 2024      | :label: [tag](../../releases/tag/0.01a) | :ticket: [Launcher](../../releases/download/0.01a/RaidTheCastles-prealpa_0.01a.zip) |
 
-| :---: |
-
 ## Reporting Bugs and Contacting
 :speech_balloon: Check our [Discord group](https://discord.gg/ZrHG9ECQYD)  [![Discord Channel](https://img.shields.io/discord/536575691563466772?label=)](https://discord.gg/ZrHG9ECQYD)
 
