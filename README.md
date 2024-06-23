@@ -20,7 +20,7 @@ This project is dedicated to preserving this Flash game so that it's not lost to
 | :---: |
 
 ## Reporting Bugs and Contacting
-:speech_balloon: Check our [Discord group](https://discord.gg/xrNE6Hg)  [![Discord Channel](https://img.shields.io/discord/536575691563466772?label=)](https://discord.gg/xrNE6Hg)
+:speech_balloon: Check our [Discord group](https://discord.gg/ZrHG9ECQYD)  [![Discord Channel](https://img.shields.io/discord/536575691563466772?label=)](https://discord.gg/ZrHG9ECQYD)
 
 :paw_prints: The project [Contributors](../../contributors)
 
