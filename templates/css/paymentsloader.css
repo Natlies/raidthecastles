@@ -1,0 +1,20 @@
+body div.payments-iframe-container{overflow:visible;}
+body div.payments-iframe-container.modal{position:absolute;left:0;top:0;z-index:19;}
+body div.payments-iframe-container.modal a.close{position:absolute;z-index:22;text-decoration:none;width:23px;height:23px;text-indent:23px;overflow:hidden;background:url(https://zpay.static.zynga.com/images/popup/close.png) no-repeat scroll 0 0 transparent;}
+body div.payments-iframe-container.modal a.close:hover{background-position:0 -23px;}
+body div.payments-iframe-container.modal a.close.red{width:28px;height:28px;text-indent:28px;overflow:hidden;background-image: url(https://zpay.static.zynga.com/images/popup/close_red.png);}
+body div.payments-iframe-container.modal a.close.red:hover{background-position:0 -38px;}
+body div.payments-iframe-container.modal .backdrop{position:absolute;background-color:#000;opacity:0.5;z-index:20;filter: alpha(opacity=50);}
+
+body div.payments-iframe-container .payments-iframe-wrapper{border:none 0;margin:0 auto;opacity:1;display:block;width:auto;height:auto;z-index:21;position:relative;padding:0px;}
+body div.payments-iframe-container.modal .payments-iframe-wrapper{border-radius:10px;position:absolute;}
+body div.payments-iframe-container.modal .payments-iframe-wrapper.has-heading{border:solid 5px #3A9BC5;border-radius:10px;background-color:#FFF;padding:10px;}
+body div.payments-iframe-container.modal .payments-iframe-wrapper.has-heading h2.heading{color:#90664C;font-weight:normal;font-size:17px;text-align:center;}
+
+body div.payments-iframe-container .payments-iframe-wrapper iframe{border:none 0;margin:0;}
+
+
+
+/*Game Specific Colors - */
+
+.payments-iframe-wrapper.game_5000044{background-color:#FFF;}
