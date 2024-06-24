@@ -1,12 +1,19 @@
 print (" [+] Loading basics...")
 import os
 import json
+import getopt
+import sys
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:], "", ["debug", "host=", "port="])
+except getopt.GetoptError as e:
+    print("Error:", e.msg)
+    exit(1)
 
 if os.name == 'nt':
     os.system("color")
     os.system("title RaidTheCastles Server")
 else:
-    import sys
     sys.stdout.write("\x1b]2;RaidTheCastles Server\x07")
 
 print (" [+] Loading players...")
@@ -29,6 +36,15 @@ from bundle import TEMPLATES_DIR
 from player import save_session
 BIND_IP = "127.0.0.1"
 BIND_PORT = 5500
+debug = False
+
+for o, a in opts:
+    if o == '--host':
+        BIND_IP = a
+    elif o == '--port':
+        BIND_PORT = int(a)
+    elif o == '--debug':
+        debug = True
 
 app: Flask = Flask(__name__)
 
@@ -274,6 +290,14 @@ def record_stats_2():
         print(" * ", i["statfunction"], ": ", i["data"], sep="")
     return "{}"
 
+@app.route("/swf/record_stats.php", methods=['GET', 'POST'])
+def record_stats_3():
+    stats = json.loads(request.data)
+    print("[+] Stats:")
+    for i in stats["stats"]:
+        print(" * ", i["statfunction"], ": ", i["data"], sep="")
+    return "{}"
+
 @app.route("/crossdomain.xml")
 def crossdomain_file():
     return send_from_directory("assets/zynga1-a.akamaihd.net ##1–4/castleville/74708 ##last revision, complete", "crossdomain.xml")
@@ -319,4 +343,4 @@ print (" [+] Running server...")
 
 if __name__ == '__main__':
     app.secret_key = 'SECRET_KEY'
-    app.run(host=BIND_IP, port=BIND_PORT, debug=False, threaded=True)
+    app.run(host=BIND_IP, port=BIND_PORT, debug=debug, threaded=True)
