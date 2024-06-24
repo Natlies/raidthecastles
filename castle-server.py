@@ -45,11 +45,15 @@ def flashFile():
 
 @app.route("/127.0.0.1record_stats.php", methods=['GET', 'POST'])
 def record_stats():
-    return ('', 204)
+    stats = json.loads(request.data)
+    print("[+] Stats:", json.dumps(stats, indent=4))
+    return "{}"
 
 @app.route("/web-client-ca2/record_stats.php", methods=['GET', 'POST'])
 def record_stats_2():
-    return ('', 204)
+    stats = json.loads(request.data)
+    print("[+] Stats:", json.dumps(stats, indent=4))
+    return "{}"
 
 @app.route("/crossdomain.xml")
 def crossdomain_file():
