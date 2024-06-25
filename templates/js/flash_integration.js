@@ -647,8 +647,8 @@ var ZCastleTabs = (function() {
 var CastlePayments = (function() {
     var me = {};
 	var currentTab = null;
-	var my_payments = ZYNGA.PAYMENTS.PAYFRAME.getPayFrameInstance();
-	my_payments.addListener(handleClose, 'onAfterIframeClose');
+	var my_payments = null; // ZYNGA.PAYMENTS.PAYFRAME.getPayFrameInstance();
+	//my_payments.addListener(handleClose, 'onAfterIframeClose');
 	var appId;
 	var gameId;
 	
@@ -743,13 +743,13 @@ var CastlePayments = (function() {
 						"modal": {"close_button": true},
 						"query_string_params": {"sighash":response.sighash, "encrypted_params": response.encrypted_params}
 					};
-					my_payments.openPaymentIframe(params);
+					//my_payments.openPaymentIframe(params);
 					$(tabId).addClass("selected");
 				}
 			);
 		} 
 		else {
-			my_payments.closePaymentIframe();
+			//my_payments.closePaymentIframe();
 		}
 	}
 

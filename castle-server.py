@@ -5,7 +5,7 @@ import getopt
 import sys
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "", ["debug", "host=", "port="])
+    opts, args = getopt.getopt(sys.argv[1:], "", ["debug", "host=", "port=", "external-host=", "external-port="])
 except getopt.GetoptError as e:
     print("Error:", e.msg)
     exit(1)
@@ -34,8 +34,10 @@ from engine import timestamp_now
 from version import version_name, release_date
 from bundle import TEMPLATES_DIR
 from player import save_session
-BIND_IP = "127.0.0.1"
+BIND_IP = "127.0.0.1"  # can be 0.0.0.0 for all interfaces
 BIND_PORT = 5500
+EXTERNAL_HOST_IP = "127.0.0.1"  # can't be 0.0.0.0
+EXTERNAL_HOST_PORT = 5500
 debug = False
 
 for o, a in opts:
@@ -43,6 +45,10 @@ for o, a in opts:
         BIND_IP = a
     elif o == '--port':
         BIND_PORT = int(a)
+    elif o == '--external-host':
+        EXTERNAL_HOST_IP = a
+    elif o == '--external-port':
+        EXTERNAL_HOST_PORT = int(a)
     elif o == '--debug':
         debug = True
 
@@ -83,18 +89,28 @@ def play():
     
     UID = session['UID']
     print("[PLAY] UID:", UID)
-    return render_template("play.html", 
-        version=version_name,
-        release_date=release_date,
-        base_url=f"http://{BIND_IP}:{BIND_PORT}",
-        server_time=timestamp_now(),
-        debug="true",
-        user={
-            "uid": UID,
-            "name": save_info(UID)["name"]
-        },
-        save_info=save_info(UID)
+    return render_template("play.html",
+    #swf_file="Game.74708-full-tracer.swf", currently broken
+    #swf_file="Game.74708-tracer2a.swf", # has fixes
+    swf_file="Game.74708-tracer2x.swf",  # add traced files on demand
+    version=version_name,
+    release_date=release_date,
+    base_url=f"http://{BIND_IP}:{BIND_PORT}",
+    external_ip=EXTERNAL_HOST_IP,
+    external_port=EXTERNAL_HOST_PORT,
+    server_time=timestamp_now(),
+    debug="true",
+    user={
+        "uid": UID,
+        "name": save_info(UID)["name"]
+    },
+    zid=UID,
+    save_info=save_info(UID)
     )
+
+#def get_zid():
+#    return libscrc.iso(session.sid.encode()) // 2048
+    #return libscrc.iso(session['UID'].encode()) // 2048
 
 @app.route("/new.html")
 def new():
@@ -109,16 +125,17 @@ def help():
 def localswitch():
     return render_template("locale_switcher.html")
 
-@app.route("/flashservices/gateway.php", methods=['POST'])
+@app.route("/swf/flashservices/gateway.php", methods=['POST'])
 def flashservices_gateway():
     resp_msg = remoting.decode(request.data)
-    # print("[+] Gateway AMF3 Request:", resp_msg)
+    print("[+] Gateway AMF3 Request:", resp_msg)
     resps = []
     reqs = resp_msg.bodies[0][1].body[1]
     for reqq in reqs:
 
         print(f"[+] {reqq.functionName}: {reqq['params']}")
-        UID = resp_msg.bodies[0][1].body[0]["uid"]
+        # UID = resp_msg.bodies[0][1].body[0]["uid"]
+        UID = resp_msg.bodies[0][1].body[0]["clientZid"]
 
         response = {
             "errorType": 0,
@@ -233,11 +250,15 @@ def flashservices_gateway():
         "errorType": 0,
         "data": resps
     }
+    print("[+] Gateway AMF3 emsg:", emsg)
 
     req = remoting.Response(emsg)
+    print("[+] Gateway AMF3 response:", req)
     ev = remoting.Envelope(pyamf.AMF0)
     ev[resp_msg.bodies[0][0]] = req
     # print("[+] Response:", ev)
+    print("[+] Gateway AMF3 envelope response:", ev)
+
 
     ret_body = remoting.encode(ev, strict=True, logger=True).getvalue()
     return Response(ret_body, mimetype='application/x-amf')

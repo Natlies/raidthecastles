@@ -6,12 +6,65 @@
             "name": "Farmer"
         },
         "player": {
+            "coins": 10000,
+            "crowns": 100000,
+            "nobility": 0,
             "gold": 100,
             "cash": 15,
             "xp": 15,
             "energyMax": 50,
             "energy": 45,
             "neighbors": [],
+            "fakeNeighborInfo": [],
+            "neighborVisitCount": 0,
+            "neighborVisitStartTime": 0,
+            "suggestedItemsList": [],
+            "matchmakingIsOptedIn": false,
+            "matchmakingNeighbors": [],
+            "activeNeighbors": [],
+            "valentineNPCList": [],
+            "gifts": [],
+            "fields": "",
+            "ooeCount": 0,
+            "resources": {
+                "xp": 0,
+                "reputation": 0,
+                "gems": 10,
+                "gemsMax": 100,
+                "silver": 10,
+                "lastHappinessCheck": 0,
+                "energy": 100,
+                "energyMax": 100,
+                "lastEnergyCheck": 0,
+                "questEnergy": 10,
+                "questEnergyMax": 10
+
+            },
+            "itemMastery": {},
+            "sale": [],
+            "zrt_le_item_sale": [],
+            "newMarketsale": [],
+            "sentVirals": [],
+            "fgwp": null,
+            "claimedVirals": [],
+            "visitAllowed": true,
+            "masterProfession": "",
+            "inventory": [],
+            "rollCounter": 0,
+            "buffs": [],
+            "questManager": {
+                "activeQuests": [],
+                "completedQuests": [],
+                "cachedLockedQuests": [],
+                "archivedQuests": [],
+                "offeredQuests": [],
+                "miscQueue": [],
+
+                "deleted": false,
+                "id": 0,
+                "tempId": -1
+
+            },
             "options": {
                 "sfxDisabled": false,
                 "musicDisabled": false,
@@ -215,6 +268,34 @@
                 "storageId": -2
             }
         },
+        "world": {
+            "ownerId": "player_unknown",
+        "id": 1,
+        "uid": "1",
+        "sizeX": 30,
+        "sizeY": 30,
+        "expansionSetName": "HomeWorld",
+        "objectsArray": [
+            {
+                "id": 63000,
+                "itemName": "barn",
+                "state":"built",
+                "plantTime": 0,
+                "components": {},
+                "direction": {},
+                "position": {
+                    "x": 17,
+                    "y": 17,
+                    "z": 0
+                },
+                "instanceDataStoreKey": null,
+                "buildTime":null,
+                "className":"StorageBuilding",
+                "deleted": false
+            }
+        ],
+        "messageManager": []
+    },
         "is_new": false,
         "firstDay": false,
         "firstDayTimestamp": 0,
@@ -324,5 +405,7 @@
     "geoip": null,
     "purchaseHistory": [],
     "___####___experiments": [],
-    "req_initUserStartTimestamp": 0
+    "req_initUserStartTimestamp": 0,
+    "verboseErrorDisplay": true,
+    "playerFriends": []
 }

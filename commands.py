@@ -1,10 +1,14 @@
 from datetime import datetime
 import json
 
+from engine import timestamp_now
 from player import get_player, session
 
 def init_user(UID) -> dict:
     save = session(UID)
+    ts_now = timestamp_now()
+
+    save["serverTime"] = ts_now
     return save
 
 def set_seen_flag(UID, flag) -> None:
