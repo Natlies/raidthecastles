@@ -83,30 +83,33 @@ def login():
 def play():
     if 'UID' not in session:
         return redirect("/")
-    
+
     if session['UID'] not in all_saves_uids():
         return redirect("/")
-    
+
     UID = session['UID']
     print("[PLAY] UID:", UID)
     return render_template("play.html",
-    #swf_file="Game.74708-full-tracer.swf", currently broken
-    swf_file="Game.74708-tracer2a.swf", # has fixes
-    #swf_file="Game.74708-tracer2x.swf",  # add traced files on demand
-    version=version_name,
-    release_date=release_date,
-    base_url=f"http://{BIND_IP}:{BIND_PORT}",
-    external_ip=EXTERNAL_HOST_IP,
-    external_port=EXTERNAL_HOST_PORT,
-    server_time=timestamp_now(),
-    debug="true",
-    user={
-        "uid": UID,
-        "name": save_info(UID)["name"]
-    },
-    zid=UID,
-    save_info=save_info(UID)
-    )
+                           # swf_file="Game.74708-full-tracer.swf", currently broken
+                           # swf_file="Game.74708-tracer2a.swf", # has fixes
+                           # swf_file="Game.74708-tracer2b.swf",  # has fixes, lightweight
+                           swf_file="Game.74708-tracer2bx.swf",  # 2b with debugging symbols
+                           # swf_file="Game.74708-tracer2x.swf",  # add traced files on demand
+                           # swf_file="Game.74708-tracer2y.swf",  # add traced files on demand
+                           version=version_name,
+                           release_date=release_date,
+                           base_url=f"http://{BIND_IP}:{BIND_PORT}",
+                           external_ip=EXTERNAL_HOST_IP,
+                           external_port=EXTERNAL_HOST_PORT,
+                           server_time=timestamp_now(),
+                           debug="true",
+                           user={
+                               "uid": UID,
+                               "name": save_info(UID)["name"]
+                           },
+                           zid=UID,
+                           save_info=save_info(UID)
+                           )
 
 #def get_zid():
 #    return libscrc.iso(session.sid.encode()) // 2048

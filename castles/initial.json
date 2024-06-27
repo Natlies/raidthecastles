@@ -4,9 +4,7 @@
         "currentWorldType": "farm",
         "attr": {
             "name": "Farmer",
-            "avatar": {
-                "baseAvatar": "princess"
-            }
+            "avatar": null
         },
         "player": {
             "coins": 10000,
@@ -28,7 +26,15 @@
             "activeNeighbors": [],
             "valentineNPCList": [],
             "gifts": [],
-            "fields": "",
+            "fields": {
+                "fields": {
+                    "beastie_to_banish" : "rat"
+                },
+
+                "deleted": false,
+                "id": 2,
+                "tempId": -1
+            },
             "ooeCount": 0,
             "resources": {
                 "xp": 0,
@@ -277,11 +283,57 @@
         "world": {
             "ownerId": "player_unknown",
             "worldID": "USER_HOME_WORLD",
-        "id": 1,
+            "sharedObjectManager": null,
+            "sectionSizeX":  15,
+            "sectionSizeY":  15,
+
+        "id": 100,
         "uid": "1",
-        "sizeX": 30,
-        "sizeY": 30,
+        "sizeX": 20,
+        "sizeY": 20,
         "expansionSetName": "HomeWorld",
+         "objects": [
+             {
+                 "itemName": "Rat_FTUE_01",
+                 "className": "MapResource",
+                 "direction": 0,
+                 "position": {
+                     "x": 15,
+                     "y": 15,
+                     "z": 0
+                 },
+                 "components": {
+
+                 },
+                 "deleted": false,
+                 "id": 1,
+                 "tempId": -1,
+                "currentProduct": null,
+                "currentImageName": null,
+                "adjustedCost": false,
+                "currentDamage": false,
+                "stateMachine": {
+                    "stateMachineName": "beasty",
+                    "version": 0,
+                    "counters": {},
+                    "stateDurations": {},
+                    "cooldowns": {},
+                    "currentState": "beasty1",
+                    "stateStartTime": 0,
+                    "pauseProgress": null,
+
+                    "deleted": false,
+                    "id": 3,
+                    "tempId": -1
+                },
+                "modifiedWishList": null,
+                 "colorIndex": null,
+                 "children": null,
+                 "fields": null,
+                 "ownerID": null
+            }
+         ],
+
         "objectsArray": [
             {
                 "id": 63000,
