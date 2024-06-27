@@ -91,8 +91,8 @@ def play():
     print("[PLAY] UID:", UID)
     return render_template("play.html",
     #swf_file="Game.74708-full-tracer.swf", currently broken
-    #swf_file="Game.74708-tracer2a.swf", # has fixes
-    swf_file="Game.74708-tracer2x.swf",  # add traced files on demand
+    swf_file="Game.74708-tracer2a.swf", # has fixes
+    #swf_file="Game.74708-tracer2x.swf",  # add traced files on demand
     version=version_name,
     release_date=release_date,
     base_url=f"http://{BIND_IP}:{BIND_PORT}",
@@ -236,6 +236,14 @@ def flashservices_gateway():
         elif reqq.functionName == 'UserService.updateFeatureFrequencyTimestamp':
             feature = reqq['params'][0]
             commands.update_feature_frequency_timestamp(UID, feature)
+            resps.append(response)
+
+        elif reqq.functionName == 'DataServicesService.getFriendsPlayingGame':
+            feature = reqq['params'][0]
+            response["zids"] = []
+            response["lastPlayed"] = []
+
+
             resps.append(response)
 
         else:

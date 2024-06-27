@@ -3,7 +3,10 @@
     "userInfo": {
         "currentWorldType": "farm",
         "attr": {
-            "name": "Farmer"
+            "name": "Farmer",
+            "avatar": {
+                "baseAvatar": "princess"
+            }
         },
         "player": {
             "coins": 10000,
@@ -11,7 +14,8 @@
             "nobility": 0,
             "gold": 100,
             "cash": 15,
-            "xp": 15,
+            "xp": 0,
+            "level": 1,
             "energyMax": 50,
             "energy": 45,
             "neighbors": [],
@@ -259,7 +263,9 @@
             "energyManager": {
                 "turboChargers": 0
             },
-            "isAKeynoteUser": "1"
+            "isAKeynoteUser": "1",
+            "currentSequenceId": 0,
+            "cachedSequenceEffects" :[]
         },
         "worldSummaryData": {
             "farm": {
@@ -270,6 +276,7 @@
         },
         "world": {
             "ownerId": "player_unknown",
+            "worldID": "USER_HOME_WORLD",
         "id": 1,
         "uid": "1",
         "sizeX": 30,
@@ -308,7 +315,9 @@
         "iconCodes": [
             "scratchCard"
         ],
-        "avatar": ""
+        "avatar": "",
+        "instanceWorldIds": [],
+        "enabledClientEvents": {}
     },
     "world": {
         "id": 1,
